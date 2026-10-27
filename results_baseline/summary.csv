@@ -1,0 +1,8 @@
+model,accuracy,acc_ci_low,acc_ci_high,precision,recall,f1,macro_auc,recall_glioma_tumor,recall_meningioma_tumor,recall_no_tumor,recall_pituitary_tumor
+SVM GridSearch Best,74.87,70.81,78.93,76.49,74.87,69.82,0.8784,18.0,94.78,100.0,85.14
+SVM Custom Class Weight (Poly),79.7,75.63,83.25,81.73,79.7,76.28,0.9412,27.0,96.52,100.0,95.95
+SVM Best Hyperparameters (Poly),86.04,82.49,89.35,90.17,86.04,84.73,0.9817,96.0,95.65,100.0,37.84
+SVM Polynomial,81.98,77.92,85.53,83.83,81.98,79.85,0.9421,37.0,95.65,100.0,95.95
+SVM RBF,73.6,69.04,77.92,71.31,73.6,69.35,0.8561,20.0,93.91,93.33,86.49
+SVM Linear,18.78,14.97,22.59,3.53,18.78,5.94,0.6041,0.0,0.0,0.0,100.0
+SVM Sigmoid,38.32,33.25,43.15,36.59,38.32,36.09,0.6271,13.0,29.57,55.24,62.16

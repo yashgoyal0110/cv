@@ -1,0 +1,5 @@
+numpy==2.2.6
+opencv-python==5.0.0.93
+scikit-image==0.25.2
+scikit-learn==1.7.2
+matplotlib

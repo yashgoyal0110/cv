@@ -1,0 +1,125 @@
+Train (2870, 2916), Test (394, 2916)
+Train counts: [826 822 395 827] Test counts: [100 115 105  74]
+PCA components kept: 451
+Fitting 5 folds for each of 52 candidates, totalling 260 fits
+GridSearch best: {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}, CV acc 0.5502
+
+=== SVM GridSearch Best ===
+Accuracy 74.87% (95% CI 70.8-78.9) | Precision 76.49% | Recall 74.87% | F1 69.82% | Macro AUC 0.8784 | test time 0.37s
+                  precision    recall  f1-score   support
+
+    glioma_tumor     0.7826    0.1800    0.2927       100
+meningioma_tumor     0.8583    0.9478    0.9008       115
+        no_tumor     0.6562    1.0000    0.7925       105
+ pituitary_tumor     0.7500    0.8514    0.7975        74
+
+        accuracy                         0.7487       394
+       macro avg     0.7618    0.7448    0.6959       394
+    weighted avg     0.7649    0.7487    0.6982       394
+
+
+[SVM Custom Class Weight (Poly)] train time 1.91s
+
+=== SVM Custom Class Weight (Poly) ===
+Accuracy 79.70% (95% CI 75.6-83.2) | Precision 81.73% | Recall 79.70% | F1 76.28% | Macro AUC 0.9412 | test time 0.17s
+                  precision    recall  f1-score   support
+
+    glioma_tumor     0.8182    0.2700    0.4060       100
+meningioma_tumor     0.7603    0.9652    0.8506       115
+        no_tumor     1.0000    1.0000    1.0000       105
+ pituitary_tumor     0.6455    0.9595    0.7717        74
+
+        accuracy                         0.7970       394
+       macro avg     0.8060    0.7987    0.7571       394
+    weighted avg     0.8173    0.7970    0.7628       394
+
+
+[SVM Best Hyperparameters (Poly)] train time 1.88s
+
+=== SVM Best Hyperparameters (Poly) ===
+Accuracy 86.04% (95% CI 82.5-89.3) | Precision 90.17% | Recall 86.04% | F1 84.73% | Macro AUC 0.9817 | test time 0.17s
+                  precision    recall  f1-score   support
+
+    glioma_tumor     0.6531    0.9600    0.7773       100
+meningioma_tumor     0.9649    0.9565    0.9607       115
+        no_tumor     1.0000    1.0000    1.0000       105
+ pituitary_tumor     1.0000    0.3784    0.5490        74
+
+        accuracy                         0.8604       394
+       macro avg     0.9045    0.8237    0.8218       394
+    weighted avg     0.9017    0.8604    0.8473       394
+
+
+[SVM Polynomial] train time 1.97s
+
+=== SVM Polynomial ===
+Accuracy 81.98% (95% CI 77.9-85.5) | Precision 83.83% | Recall 81.98% | F1 79.85% | Macro AUC 0.9421 | test time 0.17s
+                  precision    recall  f1-score   support
+
+    glioma_tumor     0.8409    0.3700    0.5139       100
+meningioma_tumor     0.8088    0.9565    0.8765       115
+        no_tumor     1.0000    1.0000    1.0000       105
+ pituitary_tumor     0.6514    0.9595    0.7760        74
+
+        accuracy                         0.8198       394
+       macro avg     0.8253    0.8215    0.7916       394
+    weighted avg     0.8383    0.8198    0.7985       394
+
+
+[SVM RBF] train time 1.86s
+
+=== SVM RBF ===
+Accuracy 73.60% (95% CI 69.0-77.9) | Precision 71.31% | Recall 73.60% | F1 69.35% | Macro AUC 0.8561 | test time 0.37s
+                  precision    recall  f1-score   support
+
+    glioma_tumor     0.5882    0.2000    0.2985       100
+meningioma_tumor     0.8438    0.9391    0.8889       115
+        no_tumor     0.7313    0.9333    0.8201       105
+ pituitary_tumor     0.6531    0.8649    0.7442        74
+
+        accuracy                         0.7360       394
+       macro avg     0.7041    0.7343    0.6879       394
+    weighted avg     0.7131    0.7360    0.6935       394
+
+
+[SVM Linear] train time 1.66s
+
+=== SVM Linear ===
+Accuracy 18.78% (95% CI 15.0-22.6) | Precision 3.53% | Recall 18.78% | F1 5.94% | Macro AUC 0.6041 | test time 0.17s
+                  precision    recall  f1-score   support
+
+    glioma_tumor     0.0000    0.0000    0.0000       100
+meningioma_tumor     0.0000    0.0000    0.0000       115
+        no_tumor     0.0000    0.0000    0.0000       105
+ pituitary_tumor     0.1878    1.0000    0.3162        74
+
+        accuracy                         0.1878       394
+       macro avg     0.0470    0.2500    0.0791       394
+    weighted avg     0.0353    0.1878    0.0594       394
+
+
+[SVM Sigmoid] train time 1.23s
+
+=== SVM Sigmoid ===
+Accuracy 38.32% (95% CI 33.2-43.1) | Precision 36.59% | Recall 38.32% | F1 36.09% | Macro AUC 0.6271 | test time 0.15s
+                  precision    recall  f1-score   support
+
+    glioma_tumor     0.2241    0.1300    0.1646       100
+meningioma_tumor     0.4198    0.2957    0.3469       115
+        no_tumor     0.4296    0.5524    0.4833       105
+ pituitary_tumor     0.3833    0.6216    0.4742        74
+
+        accuracy                         0.3832       394
+       macro avg     0.3642    0.3999    0.3673       394
+    weighted avg     0.3659    0.3832    0.3609       394
+
+
+Summary
+Model                                    Acc    Prec     Rec      F1     AUC
+SVM GridSearch Best                    74.87   76.49   74.87   69.82  0.8784
+SVM Custom Class Weight (Poly)         79.70   81.73   79.70   76.28  0.9412
+SVM Best Hyperparameters (Poly)        86.04   90.17   86.04   84.73  0.9817
+SVM Polynomial                         81.98   83.83   81.98   79.85  0.9421
+SVM RBF                                73.60   71.31   73.60   69.35  0.8561
+SVM Linear                             18.78    3.53   18.78    5.94  0.6041
+SVM Sigmoid                            38.32   36.59   38.32   36.09  0.6271

@@ -1,0 +1,22 @@
+# Dataset (download from Kaggle / GitHub, ~95 MB)
+data/
+
+# Trained models (~75 MB per run, kept on the VM)
+models_*/
+*.joblib
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets
+*key*
+*.pem
+.env
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
